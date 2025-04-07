@@ -4,79 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Selamat Ulang Tahun, Salsa!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffeef3;
-      color: #333;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe6f0;
+      color: #5c3c58;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #ffd6e0;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
     }
     section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 3rem 1.5rem;
-      text-align: center;
+      padding: 50px 20px;
+      max-width: 700px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-out;
     }
-    section p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      background: white;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
     }
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 30px;
     }
     .gallery img {
-      width: 200px;
-      border-radius: 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-    }
-    .cake {
-      width: 150px;
-      margin-bottom: 1.5rem;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     audio {
-      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      z-index: 999;
     }
   </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="music.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
 
-  <section>
-    <img src="cake.jpg" alt="Kue Ulang Tahun" class="cake" />
-    <p>Hi salsaa, selamat ulang tahun yaa. Maaf aku baru bisa ngucapin sekarang karna baru jadi hehe.</p>
-  </section>
-  <section><p>Salsa semoga di umur yang baru ini salsa bisa jauh lebih happy yaa, aku happy sekali klo salsa lg cerita hal-hal yang buat salsa happy.</p></section>
-  <section><p>Di tahun ini aku bener-bener seneng banget salah satu wishlistku sudah terwujud dengan kedatangan salsa. Aku bener-bener ngerasa aku punya adik.</p></section>
-  <section><p>Terima kasih yaa salsa udah hadir, salsa udah jadi salah satu bagian penting.</p></section>
-  <section><p>Salsa jangan pernah ngerasa sendiri yaa, klo salsa udah ngerasa semuanya lg sibuk 24/7 aku siap untuk jadi tempat salsa cerita xixi.</p></section>
-  <section><p>Sekali lagi selamat ulang tahun yaa, semoga salsa sehat selalu, selalu dii tempatkan di tempat yang baik dan dipermudah segala urusannya.</p></section>
-  <section><p>Dan semoga wishlist salsa di tahun ini bisa terwujud semua. Aku selalu support apapun itu yang buat caca happy dan untuk hal-hal baik lainnya!</p></section>
-  <section>
-    <div class="gallery">
-      <img src="foto1.jpg" alt="Kenangan 1" />
-      <img src="foto2.jpg" alt="Kenangan 2" />
-      <img src="foto3.jpg" alt="Kenangan 3" />
-    </div>
-  </section>
-</body>
-</html>
+<header>
+  <h1>Selamat Ulang Tahun, Salsa! 🎉</h1>
+  <img src="assets/cake.jpg" alt="Kue Ulang Tahun" style="max-width:200px; margin-top:20px;">
+</header>
+
+<section>
+  <p>Hi salsaa, selamat ulang tahun yaa maaf aku baru bisa ngucapin sekarang karna baru jadi hehe. Salsa semoga di umur yang baru ini salsa bisa jauh lebih happy yaa, aku happy sekali klo salsa lg cerita hal-hal yang buat salsa happy.</p>
+</section>
+
+<section>
+  <p>Di tahun ini aku bener-bener seneng banget salah satu wishlistku sudah terwujud dengan kedatangan salsa. Aku bener-bener ngerasa aku punya adik. Terima kasih yaa salsa udah hadir, salsa udah jadi salah
